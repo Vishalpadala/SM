@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Photo-Frames & KeyChain Printing</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-image: linear-gradient(150deg, rgba(234, 211, 237, 0.827), rgb(218, 205, 179));
+        
+        }
+        .container{
+            background-image: url("assets/images/bg1.jpg");
+            background-repeat: no-repeat;
+            background-position-x: center;
+            background-size: 85%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            margin: 40px 10px 0 10px;
+        }
+        .container .heading{
+            width: 65%;
+            margin-top: 40px;
+            padding-bottom: 50px;
+        }
+        .container .heading h3{
+            font-size: 30px;
+            font-weight: bolder;
+            padding-bottom: 10px;
+        }
+        .container .heading h3 span{
+            font-weight: 100;
+        }
+        .container .heading h3 p{
+            padding-top: 30px;
+        }
+        .container .box{
+            display: flex;
+            cursor: pointer;
+            flex-direction: row;
+            justify-content: center;
+        }
+        .container .box .dream{
+            display: flex;
+            padding-left: 5px;
+            padding-right: 5px;
+            flex-direction: column;
+            width: 36.5%;
+        }
+        .container .box .dream img{
+            width: 100%;
+            padding-bottom: 25px;
+            border-radius: 5px;
+        }
+        .container .box .dream img:hover{
+            opacity: 0.9;
+        }
+        @media only screen and (max-width:390px){
+            .container .box{
+                flex-direction: column;
+            }
+            .container .box .dream{
+                width: 100%;
+            }
+        }
+        @media only screen and (max-width:590px){
+            body{
+                width: 100%;
+            }
+            .container .heading{
+                width: 100%;
+            }
+            .container .heading h3{
+                font-size: 1em;
+            }
+            .container .box{
+                width:90%;
+            }
+            .container .box .dream{
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="heading">
+            <h3> Regular & Lighting Photo-Frames <span> Gallery</span></h3>
+            <p>We made Various types of Photo Printings for immersive look</p>
+        </div>
+
+        <div class="box">
+            <div class="dream" style="margin-right: 30px;">
+                <a href="assets\images\frame(1).jpg">
+                <img src="assets\images\frame(1).jpg"></a>
+                <a href="assets\images\frame(2).jpg">
+                <img src="assets\images\frame(2).jpg"></a>
+                <a href="assets\images\frame(6).jpg">
+                <img src="assets\images\frame(6).jpg"></a>
+                <a href="assets\images\frame(8).jpg">
+                <img src="assets\images\frame(8).jpg"></a>
+                <a href="assets\images\frame(3).jpg">
+                    <img src="assets\images\frame(3).jpg"></a>
+                <a href="assets\images\frame(4).jpg">
+                    <img src="assets\images\frame(4).jpg"></a>
+                
+            </div>
+            <div class="dream">
+                <a href="assets\images\frame(5).jpg">
+                    <img src="assets\images\frame(5).jpg"></a>
+                <a href="assets\images\keychain(4).jpg">
+                    <img src="assets\images\keychain(4).jpg"></a>
+                <a href="assets\images\keychain(5).jpg">
+                    <img src="assets\images\keychain(5).jpg"></a>
+                    <a href="assets\images\frames.jpg">
+                        <img src="assets\images\frames.jpg"></a>
+                        <a href="assets\images\frame(7).jpg">
+                            <img src="assets\images\frame(7).jpg"></a>
+            </div>
+        </div>
+        <div class="heading" style="padding: 70px 0 15px 0; border-bottom: solid 3px;">
+            <h3> Wodden Photo-Frames & KeyChains <span> Gallery</span></h3>
+        </div>
+
+        <div class="box" style="margin-top: 60px;">
+            <div class="dream" style="margin-right: 30px;">
+                <a href="assets\images\woodframe(1).jpg">
+                <img src="assets\images\woodframe(1).jpg"></a>
+                <a href="assets\images\keychain(1).jpg">
+                <img src="assets\images\keychain(1).jpg"></a>
+                <a href="assets\images\woodframe(2).jpg">
+                    <img src="assets\images\woodframe(2).jpg"></a>
+            </div>
+            <div class="dream">
+                <a href="assets\images\keychain(2)jpg">
+                    <img src="assets\images\keychain(2).jpg"></a>
+                <a href="assets\images\keychain(3).jpg">
+                    <img src="assets\images\keychain(3).jpg"></a>
+                <a href="assets\images\keychain(6).jpg">
+                    <img src="assets\images\keychain(6).jpg"></a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

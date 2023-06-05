@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mug Printing</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            background-color: rgb(215, 245, 245);
+        }
+        .container{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border-radius: 8px;
+            text-align: center;
+            margin: 40px 30px 0 30px;
+        }
+        .container .heading{
+            width: 65%;
+            padding-bottom: 50px;
+        }
+        .container .heading h3{
+            font-size: 30px;
+            font-weight: bolder;
+            padding-bottom: 10px;
+            border-bottom: 3px solid #222;
+        }
+        .container .heading h3 span{
+            font-weight: 100;
+        }
+        .container .box{
+            display: flex;
+            cursor: pointer;
+            border-radius: 8px;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        .container .box .dream{
+            display: flex;
+            padding-left: 5px;
+            padding-right: 5px;
+            border-radius: 8px;
+            flex-direction: column;
+            width: 32.5%;
+        }
+        .container .box .dream img{
+            width:100%;
+            padding-bottom: 15px;
+            border-radius: 8px;
+        }
+        .container .box .dream img:hover{
+            opacity: 0.9;
+        }
+        @media only screen and (max-width:390px){
+            .container .box{
+                flex-direction: column;
+            }
+            .container .box .dream{
+                width: 100%;
+            }
+        }
+        @media only screen and (max-width:790px){
+            .container .heading{
+                width: 100%;
+            }
+            .container .heading h3{
+                font-size: 1em;
+            }
+            .container .box .dream{
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="heading">
+            <h3>Mug Printing <span> Gallery</span></h3>
+        </div>
+
+        <div class="box">
+            <div class="dream">
+                <a href="./mugs/mugs(1).jpg">
+                <img src="./mugs/mugs(1).jpg"></a>
+                <a href="./mugs/Mug1.jpg">
+                <img src="./mugs/Mug1.jpg"></a>
+                <a href="./mugs/mugs(6).jpg">
+                    <img src="./mugs/mugs(6).jpg"></a>
+                <a href="./mugs/mugs(9).jpg">
+                    <img src="./mugs/mugs(9).jpg"></a>
+                <a href="./mugs/mugs(12).jpg">
+                    <img src="./mugs/mugs(12).jpg"></a>
+                <a href="./mugs/mugs(15).jpg">
+                    <img src="./mugs/mugs(15).jpg"></a>
+            </div>
+            <div class="dream">
+                <a href="./mugs/mugs(2).jpg">
+                    <img src="./mugs/mugs(2).jpg"></a>
+                <a href="./mugs/mugs(4).jpg">
+                    <img src="./mugs/mugs(4).jpg"></a>
+                <a href="./mugs/mugs(7).jpg">
+                    <img src="./mugs/mugs(7).jpg"></a>
+                <a href="./mugs/mugs(10).jpg">
+                    <img src="./mugs/mugs(10).jpg"></a>
+                <a href="./mugs/mugs(13).jpg">
+                    <img src="./mugs/mugs(13).jpg"></a>
+                <a href="./mugs/mugs(16).jpg">
+                    <img src="./mugs/mugs(16).jpg"></a>
+            </div>
+            <div class="dream">
+                <a href="./mugs/mugs(3).jpg">
+                    <img src="./mugs/mugs(3).jpg"></a>
+                <a href="./mugs/mugs(5).jpg">
+                    <img src="./mugs/mugs(5).jpg"></a>
+                <a href="./mugs/mugs(8).jpg">
+                    <img src="./mugs/mugs(8).jpg"></a>
+                <a href="./mugs/mugs(11).jpg">
+                    <img src="./mugs/mugs(11).jpg"></a>
+                <a href="./mugs/mugs(14).jpg">
+                    <img src="./mugs/mugs(14).jpg"></a>
+                <a href="./mugs/mugs(17).jpg">
+                    <img src="./mugs/mugs(17).jpg"></a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

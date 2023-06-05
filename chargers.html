@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chargers, Powerbanks</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            background-color: aqua;
+        }
+        .container{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            margin: 40px 30px 0 30px;
+        }
+        .container .heading{
+            width: 65%;
+            padding-bottom: 50px;
+        }
+        .container .heading h3{
+            font-size: 30px;
+            font-weight: bolder;
+            padding-bottom: 10px;
+            border-bottom: 3px solid #222;
+        }
+        .container .heading h3 span{
+            font-weight: 100;
+        }
+        .container .box{
+            display: flex;
+            cursor: pointer;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        .container .box .dream{
+            display: flex;
+            padding-left: 5px;
+            padding-right: 5px;
+            flex-direction: column;
+            width: 32.5%;
+        }
+        .container .box .dream img{
+            width: 100%;
+            padding-bottom: 15px;
+            border-radius: 5px;
+        }
+        .container .box .dream img:hover{
+            opacity: 0.9;
+        }
+        @media only screen and (max-width:390px){
+            .container .box{
+                flex-direction: column;
+            }
+            .container .box .dream{
+                width: 100%;
+            }
+        }
+        @media only screen and (max-width:790px){
+            .container .heading{
+                width: 100%;
+            }
+            .container .heading h3{
+                font-size: 1em;
+            }
+            .container .box .dream{
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="heading">
+            <h3>Powerbanks, Chargers & <span>Data Cables</span></h3>
+        </div>
+
+        <div class="box">
+            <div class="dream">
+                <a href="assets\images\charge-1.jpg">
+                <img src="assets\images\charge-1.jpg"></a>
+                <a href="assets\images\charge-2.jpg">
+                <img src="assets\images\charge-2.jpg"></a>
+                <a href="assets\images\charge-3.jpg">
+                <img src="assets\images\charge-3.jpg"></a>
+                <a href="assets\images\charge-4.jpg">
+                <img src="assets\images\charge-4.jpg"></a>
+                <a href="assets\images\charge-5.jpg">
+                <img src="assets\images\charge-5.jpg"></a>
+            </div>
+            <div class="dream">
+                <a href="assets\images\charge-6.jpg">
+                    <img src="assets\images\charge-6.jpg"></a>
+                <a href="assets\images\charge-7.jpg">
+                    <img src="assets\images\charge-7.jpg"></a>
+                <a href="assets\images\charge-8.jpg">
+                    <img src="assets\images\charge-8.jpg"></a>
+                <a href="assets\images\charge-9.jpg">
+                    <img src="assets\images\charge-9.jpg"></a>
+                <a href="assets\images\charge-10.jpg">
+                    <img src="assets\images\charge-10.jpg"></a>
+            </div>
+            <div class="dream">
+                <a href="assets\images\charge-11.jpg">
+                    <img src="assets\images\charge-11.jpg"></a>
+                <a href="assets\images\charge-12.jpg">
+                    <img src="assets\images\charge-12.jpg"></a>
+                <a href="assets\images\charge-13.jpg">
+                    <img src="assets\images\charge-13.jpg"></a>
+                <a href="assets\images\charge-14.jpg">
+                    <img src="assets\images\charge-14.jpg"></a>
+                <a href="assets\images\charge-5.jpg">
+                    <img src="assets\images\charge-5.jpg"></a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

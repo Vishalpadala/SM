@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PhotoFrames & Keychain Printing</title>
+    <style>
+        div, label {
+  position: absolute;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+body {
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  font-size: 1vmin;
+  font-family: "Open Sans", sans-serif;
+  color: white;
+  background: #333;
+}
+body .container {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 150em;
+  height: 100%;
+}
+body .container [class*=item] {
+  width: 33%;
+  height: 33%;
+  border: 1px solid transparent;
+  background: url() center center/cover no-repeat;
+  transition: all 0.5s ease-in-out;
+  z-index: 0;
+}
+body .container [class*=item]:hover {
+  border: 1px solid white;
+  z-index: 1;
+}
+body .container [class*=item]:nth-of-type(1) {
+  top: 20%;
+  left: 0;
+}
+body .container [class*=item]:nth-of-type(2) {
+  top: 20%;
+  left: 33%;
+}
+body .container [class*=item]:nth-of-type(3) {
+  top: 20%;
+  left: 66%;
+}
+body .container [class*=item]:nth-of-type(4) {
+  top: 50%;
+  left: 0;
+}
+body .container [class*=item]:nth-of-type(5) {
+  top: 50%;
+  left: 33%;
+}
+body .container [class*=item]:nth-of-type(6) {
+  top: 50%;
+  left: 66%;
+}
+body .container input {
+  display: none;
+}
+body .container input:checked + [class*=item] {
+  top: 0;
+  left: 0;
+  background-size: 70%;
+  width: 100%;
+  height: 100%;
+  z-index: 3;
+}
+    </style>
+</head>
+<body>
+    
+ <div class="container">
+   <input id="item1" type="checkbox"/>
+   <label class="item1" for="item1" style="background-image:url(./assets/images/Real\ 1\ \(2\).jpg);"></label>
+   <input id="item2" type="checkbox"/>
+   <label class="item2" for="item2" style="background-image:url(./assets/images/Real\ 1\ \(27\).jpg);"></label>
+   <input id="item3" type="checkbox"/>
+   <label class="item3" for="item3" style="background-image:url(./assets/images/Real\ 1\ \(29\).jpg);"></label>
+   <input id="item4" type="checkbox"/>
+   <label class="item4" for="item4" style="background-image:url(./assets/images/Real\ 1\ \(30\).jpg);"></label>
+   <input id="item5" type="checkbox"/>
+   <label class="item5" for="item5" style="background-image:url(./assets/images/keychain\(1\).jpg);"></label>
+   <input id="item6" type="checkbox"/>
+   <label class="item6" for="item6" style="background-image:url(./assets/images/Frames.jpg);"></label>
+ </div>
+</body>
+</html>
