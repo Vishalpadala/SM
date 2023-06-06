@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>T-Shirt Printing</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            background-color: aqua;
+        }
+        .container{
+            display: flex;
+            flex-direction: column;
+            max-width:max-content;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            margin: 40px 30px 0 30px;
+        }
+        .container .heading{
+            width: 65%;
+            padding-bottom: 50px;
+        }
+        .container .heading h3{
+            font-size: 30px;
+            font-weight: bolder;
+            padding-bottom: 10px;
+            border-bottom: 3px solid #222;
+        }
+        .container .heading h3 span{
+            font-weight: 100;
+        }
+        .container .box{
+            display: flex;
+            cursor: pointer;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        .container .box .dream{
+            display: flex;
+            padding-left: 5px;
+            padding-right: 5px;
+            flex-direction: column;
+            width: 32.5%;
+        }
+        .container .box .dream img{
+            width: 100%;
+            padding-bottom: 15px;
+            border-radius: 5px;
+        }
+        .container .box .dream img:hover{
+            opacity: 0.9;
+        }
+        @media only screen and (max-width:590px){
+            .container .box{
+                flex-direction: column;
+            }
+            .container .box .dream{
+                width: 100%;
+            }
+        }
+        @media only screen and (max-width:790px){
+            .container .heading{
+                width: 100%;
+            }
+            .container .heading h3{
+                font-size: 1em;
+            }
+            .container .box .dream{
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="heading">
+            <h3>T-Shirt Printing <span> Gallery</span></h3>
+        </div>
+
+        <div class="box">
+            <div class="dream">
+                <a href="./assets/images/tshirt(1).jpg">
+                <img src="./assets/images/tshirt(1).jpg"></a>
+                <a href="./assets/images/tshirt(4).jpg">
+                <img src="./assets/images/tshirt(4).jpg"></a>
+                <a href="./assets/images/tshirt(7).jpg">
+                <img src="./assets/images/tshirt(7).jpg"></a>
+                <a href="./assets/images/tshirt(10).jpg">
+                <img src="./assets/images/tshirt(10).jpg"></a>
+                <a href="./assets/images/tshirt(13).jpg">
+                <img src="./assets/images/tshirt(13).jpg"></a>
+            </div>
+            <div class="dream">
+                <a href="./assets/images/tshirt(2).jpg">
+                    <img src="./assets/images/tshirt(2).jpg"></a>
+                <a href="./assets/images/tshirt(5).jpg">
+                    <img src="./assets/images/tshirt(5).jpg"></a>
+                <a href="./assets/images/tshirt(8).jpg">
+                    <img src="./assets/images/tshirt(8).jpg"></a>
+                <a href="./assets/images/tshirt(11).jpg">
+                    <img src="./assets/images/tshirt(11).jpg"></a>
+                <a href="./assets/images/tshirt(14).jpg">
+                    <img src="./assets/images/tshirt(14).jpg"></a>
+            </div>
+            <div class="dream">
+                <a href="./assets/images/tshirt(3).jpg">
+                    <img src="./assets/images/tshirt(3).jpg"></a>
+                <a href="./assets/images/tshirt(6).jpg">
+                    <img src="./assets/images/tshirt(6).jpg"></a>
+                <a href="./assets/images/tshirt(9).jpg">
+                    <img src="./assets/images/tshirt(9).jpg"></a>
+                <a href="./assets/images/tshirt(12).jpg">
+                    <img src="./assets/images/tshirt(12).jpg"></a>
+                <a href="./assets/images/tshirt.jpg">
+                    <img src="./assets/images/tshirt.jpg"></a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
